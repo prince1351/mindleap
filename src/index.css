@@ -1,7 +1,5 @@
-@font-face {
-  font-family: 'LeagueSpartan';
-  src: url("assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,11 +10,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "LeagueSpartan";
 }
 
 body{
-  background-color: rgb(245, 246, 250);
-  color: rgb(45,52 ,54);
+  scroll-behavior: smooth;
 }
+
+.isActive {
+  color : #06a055 !important
+}
+
+/* Tab CSS */
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid #06a055;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.react-tabs__tab {
+  background: white;
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.react-tabs__tab--selected {
+  background: #fff;
+  border: 1px solid #06a055 !important;
+  color: black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+/*  */
 

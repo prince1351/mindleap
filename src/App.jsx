@@ -1,24 +1,31 @@
-import { Routes, Route } from "react-router-dom";
-import Footer from "./assets/components/Footer";
-import Navbar from "./assets/components/Navbar";
-import Home from "./pages/Home";
-import Support from "./pages/Support";
-import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import About from "./components/About"
+
+import Contact from './components/Contact.jsx';
+import Footer from "./components/Footer.jsx";
+
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import Pricing from "./components/Pricing"
+import Services from "./components/Services"
+import Testimonials from "./components/Testimonials"
+import WorkingStep from "./components/WorkingStep"
 
 
 
-export default function App() {
+const App = () => {
   return (
-     <div className="px-4">
-         <ToastContainer />
-          <Navbar />
-             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/support" element={<Support />} />
-             </Routes>
-          <Footer />
-          
+    <div className="font-primary overflowx-x-hidden">
+   <Navbar />
+   <Hero />
+    <Services />
+    <About />
+    <WorkingStep />
+    <Pricing />
+    <Testimonials />
+    <Contact />
+    <Footer />
     </div>
   )
 }
+
+export default App
